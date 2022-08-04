@@ -3,17 +3,6 @@ import styled from 'styled-components';
 import Navbar from '../components/Navbar';
 
 const Landing = () => {
-
-  
-
-  // const func = () => {
-  //   amlReqSingleTX(data);
-  // };
-
-  // useEffect(() => {
-  //   getWalletAnalysis('c85a4058-9266-435f-9a98-41d43e44d437');
-  // }, []);
-
   return (
     <Container>
       <Navbar />

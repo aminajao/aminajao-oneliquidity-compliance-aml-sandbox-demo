@@ -51,7 +51,7 @@ export const Amlbatchwallet = ({ history }) => {
         setError('All fields are required');
       }
     } catch (error) {
-      setError(error?.message || 'An error occured');
+      setError('There was a problem sending your aml request' || 'An error occured');
     }
     setLoading(false);
   };

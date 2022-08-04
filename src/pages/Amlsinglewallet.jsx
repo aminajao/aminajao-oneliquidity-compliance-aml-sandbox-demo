@@ -23,9 +23,6 @@ export const Amlsinglewallet = () => {
     });
   };
 
-  // useEffect(() => {
-  //   getWalletAnalysis('c85a4058-9266-435f-9a98-41d43e44d437');
-  // }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,7 +36,9 @@ export const Amlsinglewallet = () => {
         setError('All fields are required');
       }
     } catch (error) {
-      setError(error?.message || 'An error occured');
+      setError(
+        'There was a problem sending your aml request' || 'An error occured'
+      );
     }
 
     setLoading(false);

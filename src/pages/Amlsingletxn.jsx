@@ -49,7 +49,8 @@ export const Amlsingletxn = () => {
         setError('All fields are required');
       }
     } catch (error) {
-      setError(error?.message || 'An error occured');
+      console.log(error);
+      setError('There was a problem sending your aml request' || 'An error occured');
     }
 
     setLoading(false);

@@ -26,6 +26,7 @@ export const Analytic = () => {
   return (
     <Container>
       <Navbar />
+      <a href="/aml/wallet/batch">Go back</a>
       <div>
         <p>Analysed At - {response?.data?.analysedAt}</p>
         <h1>Risk Score - {response?.data?.riskScore || '0'}</h1>
@@ -45,6 +46,12 @@ export const Analytic = () => {
 const Container = styled.div`
   margin: auto;
   margin: 20px 30%;
+
+  a {
+    text-decoration: none;
+    color: #7b61ff;
+    font-weight: bold;
+  }
 
   .error {
     color: red;
